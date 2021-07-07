@@ -1,0 +1,2 @@
+# javascript
+Learning javaScript basics.
