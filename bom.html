@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser object model</title>
+</head>
+
+<body>
+    <button onclick="alertFun()">alert</button>
+    <button onclick="confirmFun()">confirm</button>
+    <button onclick="promptFun()">prompt</button>
+
+    <script>
+        function alertFun() {
+            alert("The record could not be created...");
+        }
+
+        function confirmFun() {
+            var status = confirm("Are you sure want to delete the record");
+
+            if (status == true) {
+                alert("record delete");
+            } else {
+                alert("cancelled");
+            }
+        }
+
+        function promptFun() {
+            var val = prompt("Enter your mobile");
+            alert("Your mobile is " + val);
+        }
+    </script>
+</body>
+
+</html>
