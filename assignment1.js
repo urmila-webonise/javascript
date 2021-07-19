@@ -24,6 +24,36 @@ numbers.sort(function (a, b) {
 });
 console.log(numbers);
 
+//ascendinng order
+
+let nums = [2, 1, 4, 55, 6, 7, 22, 0, '', 2, 1];
+
+for (let i = 1; i < nums.length; i++){
+    for (let j = 0; j < i; j++){
+        if (nums[i] < nums[j]) {
+            let temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+        }
+    }
+}
+console.log(nums);
+
+//Decending order
+
+let nums = [2, 1, 4, 55, 6, 7, 22, 0, '', 2, 1];
+
+for (let i = 1; i < nums.length; i++){
+    for (let j = 0; j < i; j++){
+        if (nums[j] < nums[i]) {
+            let temp = nums[j];
+            nums[j] = nums[i];
+            nums[i] = temp;
+        }
+    }
+}
+console.log(nums);
+
 //Max number
 
 let numbers = [2, 1, 4, 55, 6, 7, 22, 0, '', 2, 1];
