@@ -92,3 +92,14 @@ const newPersons = persons.map((a) => {
   return { name: a.name };
 });
 console.log(newPersons);
+
+let persons = [
+  { age: 1, name: "A" },
+  { age: 2, name: "B" },
+  { age: 13, name: "C" },
+  { age: 42, name: "D" },
+  { age: 42, name: "E" },
+];
+for (let { name } of persons) {
+  console.log("name:", name);
+}
